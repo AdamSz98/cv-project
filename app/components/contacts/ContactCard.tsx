@@ -4,14 +4,12 @@ interface ContactCardProps {
   label: string;
   icon: any;
   redirectFunc?: any;
-  info?: string;
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
   label,
   icon: Icon,
   redirectFunc,
-  info
 }) => {
 
   return (
@@ -21,7 +19,6 @@ const ContactCard: React.FC<ContactCardProps> = ({
     >
       <Icon className={sytles.icon} />
       <p>{label}</p>
-      {info && <p>{info}</p>}
     </div>
   )
 }
