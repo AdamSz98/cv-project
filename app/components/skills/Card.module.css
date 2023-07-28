@@ -16,7 +16,29 @@
   font-weight: normal;
 }
 
+.js, .ts, .cs, .nx, .an, .dn {
+  font-size: 80px;
+}
+
 .js {
   color: #f0dc4e;
-  font-size: 80px;
+}
+
+.ts {
+  color: #2f74c0;
+}
+
+.cs, .dn {
+  color: #8864a4;
+}
+
+.nx {
+  color: #000;
+  background: #fff;
+  border-radius: 200px;
+  border: 0.1rem solid #fff;
+}
+
+.an {
+  color: #de002d;
 }

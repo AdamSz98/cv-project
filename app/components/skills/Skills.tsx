@@ -1,6 +1,10 @@
 import Card from './Card';
 import styles from './Skills.module.css';
-import { SiJavascript } from 'react-icons/si'
+import { 
+  SiJavascript, SiTypescript, SiCsharp, 
+  SiNextdotjs, SiAngular, SiDotnet
+} from 'react-icons/si';
+
 
 const Skills = () => {
   return (
@@ -9,8 +13,33 @@ const Skills = () => {
       <div className={styles.container}>
         <Card 
           icon={SiJavascript} 
-          label="Javascript"
+          label="JavaScript"
           style="js"
+        />
+        <Card 
+          icon={SiTypescript} 
+          label="TypeScript"
+          style="ts"
+        />
+        <Card 
+          icon={SiCsharp} 
+          label="C#"
+          style="cs"
+        />
+        <Card 
+          icon={SiNextdotjs} 
+          label="Next.js"
+          style="nx"
+        />
+        <Card 
+          icon={SiAngular} 
+          label="Angular"
+          style="an"
+        />
+        <Card 
+          icon={SiDotnet} 
+          label="ASP.NET Core"
+          style="dn"
         />
       </div>
     </div>
