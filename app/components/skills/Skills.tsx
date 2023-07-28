@@ -14,6 +14,7 @@ const Skills = () => {
 
   useEffect(() => {
     setLoaded(true)
+    checkScroll();
   }, [loaded])
 
   const showSkills = () => {
@@ -25,8 +26,8 @@ const Skills = () => {
   }
   
   const checkScroll = () => {
-    if(window.scrollY >= window.innerHeight * 1.7) {
-      if(window.scrollY > window.innerHeight * 3) deleteSkills()
+    if(window.scrollY >= window.innerHeight * 1.4) {
+      if(window.scrollY > window.innerHeight * 2.8) deleteSkills()
       else showSkills();
     } else {
       deleteSkills();

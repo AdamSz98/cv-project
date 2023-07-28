@@ -8,10 +8,15 @@ const Navbar = () => {
 
   useEffect(() => {
     setLoaded(true)
+    changeBackground();
   }, [loaded])
 
   const changeBackground = () => {
-    if(window.scrollY >= window.innerHeight) setNavbar('blur')
+    if(window.scrollY >= window.innerHeight && 
+      window.scrollY < window.innerHeight * 3
+    ) {
+      setNavbar('blur')
+    }
     else setNavbar('navbar');
   }
 
