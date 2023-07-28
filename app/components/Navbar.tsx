@@ -1,6 +1,4 @@
 'use client';
-
-import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { useState } from 'react';
 
@@ -8,21 +6,43 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState('navbar');
 
   const changeBackground = () => {
-    if(window.scrollY >= 913) setNavbar('blur')
+    if(window.scrollY >= window.innerHeight) setNavbar('blur')
     else setNavbar('navbar');
+  }
+
+  const navigateTo = (y: number) => {
+    window.scrollTo({
+      top: y,
+      left: 0,
+      behavior: "smooth",
+    });
   }
 
   window.addEventListener('scroll', changeBackground);
 
   return (
     <div className={styles[navbar]}>
-      <div className={styles.logo}>
-        <h1>Adam Sz</h1>
+      <div>
+        <a
+          href="#home"
+          className={styles.logo}
+          onClick={() => navigateTo(0)}
+        >
+          Adam Sz
+        </a>
       </div>
       <div className={styles.linkContainer}>
-        <Link href="" className={styles.link}>ABOUT</Link>
-        <Link href="" className={styles.link}>SKILLS</Link>
-        <Link href="" className={styles.link}>CONTACTS</Link>
+        <a 
+          href="#about" 
+          className={styles.link}
+          onClick={() => navigateTo(window.innerHeight)}
+        >ABOUT</a>
+        <a 
+          href="#skills" 
+          className={styles.link}
+          onClick={() => navigateTo(window.innerHeight * 2)}
+        >SKILLS</a>
+        <a href="#contacts" className={styles.link}>CONTACTS</a>
       </div>
     </div>
   )

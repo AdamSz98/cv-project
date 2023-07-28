@@ -20,8 +20,8 @@ const Skills = () => {
   }
   
   const checkScroll = () => {
-    if(window.scrollY > 1500) {
-      if(window.scrollY > 2100) deleteSkills()
+    if(window.scrollY >= window.innerHeight * 1.7) {
+      if(window.scrollY > window.innerHeight * 3) deleteSkills()
       else showSkills();
     } else {
       deleteSkills();

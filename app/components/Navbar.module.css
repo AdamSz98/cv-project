@@ -11,9 +11,10 @@
 }
 
 .logo {
-  font-size: 10px;
+  font-size: 24px;
   color: white;
   margin-left: 40px;
+  text-decoration: none;
 }
 
 .linkContainer {
