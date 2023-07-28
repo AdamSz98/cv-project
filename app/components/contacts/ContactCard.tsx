@@ -1,4 +1,5 @@
 import sytles from './ContactCard.module.css';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 interface ContactCardProps {
   label: string;
@@ -12,15 +13,26 @@ const ContactCard: React.FC<ContactCardProps> = ({
   redirectFunc,
 }) => {
 
-  return (
-    <div 
-      onClick={redirectFunc && redirectFunc} 
-      className={sytles.card}
-    >
-      <Icon className={sytles.icon} />
-      <p>{label}</p>
-    </div>
-  )
+  if(redirectFunc) {
+    return (
+      <div 
+        onClick={redirectFunc} 
+        className={sytles.card}
+      >
+        <Icon className={sytles.icon} />
+        <p>{label}</p>
+      </div>
+    )
+  } else {
+    return (
+      <CopyToClipboard text={label}>
+        <div className={sytles.card}>
+          <Icon className={sytles.icon} />
+          <p>{label}</p>
+        </div>
+      </CopyToClipboard>
+    )
+  }
 }
 
 export default ContactCard;
