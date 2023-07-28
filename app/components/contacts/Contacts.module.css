@@ -2,10 +2,11 @@
   height: 100vh;
   background-color: #00000C;
   color: #fff;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
 }
 
 .imgContainer {
-  height: 75%;
   position: relative;
   overflow: hidden;
 }
@@ -21,14 +22,15 @@
 }
 
 .container h1 {
-  width: 200px;
+  text-align: center;
   margin: 25px auto;
+  font-size: 28px;
   font-weight: normal;
   color: #8864a4;
 }
 
 .contacts {
-  margin: 50px auto;
+  margin: 50px auto 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

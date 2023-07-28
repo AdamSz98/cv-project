@@ -39,10 +39,12 @@ const Contacts = () => {
           <ContactCard 
             icon={MdEmail} 
             label="szekrenyes.adam98@gmail.com"
+            type="Email"
           />
           <ContactCard 
             icon={MdPhoneAndroid}
             label="+36304470959"
+            type="Phone number"
           />
         </div>
       </div>

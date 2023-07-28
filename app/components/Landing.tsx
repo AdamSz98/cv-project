@@ -33,7 +33,7 @@ const Landing = () => {
         />
       <div className={styles.textContainer}>
         <h1 className={styles.text}>
-          Adam, <br/> a passionate junior dev for your consideration.
+          Adam, <br/> a passionate dev for <br/> your consideration.
         </h1>
       </div>
     </div>
