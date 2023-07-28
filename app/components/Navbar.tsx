@@ -1,9 +1,21 @@
+'use client';
+
 import Link from "next/link";
 import styles from "./Navbar.module.css";
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState('navbar');
+
+  const changeBackground = () => {
+    if(window.scrollY >= 913) setNavbar('blur')
+    else setNavbar('navbar');
+  }
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
-    <div className={styles.navbar}>
+    <div className={styles[navbar]}>
       <div className={styles.logo}>
         <h1>Adam Sz</h1>
       </div>
