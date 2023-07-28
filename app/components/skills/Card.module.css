@@ -16,29 +16,27 @@
   font-weight: normal;
 }
 
-.js, .ts, .cs, .nx, .an, .dn {
-  font-size: 80px;
+.icon, .next {
+  font-size: 60px;
 }
 
-.js {
-  color: #f0dc4e;
-}
-
-.ts {
-  color: #2f74c0;
-}
-
-.cs, .dn {
-  color: #8864a4;
-}
-
-.nx {
+.next {
   color: #000;
   background: #fff;
   border-radius: 200px;
   border: 0.1rem solid #fff;
 }
 
-.an {
-  color: #de002d;
+.container {
+  width: 80%;
+  margin: 15px 0;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.progress {
+  height: 6px;
+  border-radius: 20px;
+  transition: ease-in-out 2s;
 }
