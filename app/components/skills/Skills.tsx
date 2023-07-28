@@ -17,7 +17,7 @@ const Skills = () => {
   }, [loaded])
 
   const showSkills = () => {
-    setSkills([8, 6, 5, 7, 4, 5]);
+    setSkills([7, 6, 5, 6, 4, 5]);
   }
 
   const deleteSkills = () => {

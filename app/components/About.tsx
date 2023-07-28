@@ -21,10 +21,10 @@ const About = () => {
             Hello there! My name is <span className={styles.highlight}>Adam Szekrényes</span>, 
             I am a junior full-stack developer, who has recently 
             graduated from Green Fox Academy. 
-            I have a huge passion for programming and my skills 
-            include developing websites and web applications. 
-            My other passions and hobbies are making music, 
-            videogame development, and of course, playing videogames. 
+            I have a huge passion for programming and my expertise 
+            is developing websites and web applications. 
+            My other passions and hobbies are making and producing music
+            in all kinds of genres, and a bit of videogame development. 
           </p>
         </div>
       </div>
