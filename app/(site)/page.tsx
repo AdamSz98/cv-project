@@ -1,5 +1,10 @@
+import Navbar from "../components/Navbar";
+import styles from "./page.module.css";
+
 export default function Home() {
   return (
-    <div>Hello wrld</div>
+    <div className={styles.main}>
+      <Navbar />
+    </div>
   )
 }

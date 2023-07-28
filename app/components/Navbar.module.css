@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 62px;
+}
+
+.logo {
+  font-size: 10px;
+  color: white;
+}
+
+.link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
