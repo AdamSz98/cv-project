@@ -22,3 +22,31 @@
   height: 100%;
   object-fit: cover;
 }
+
+.sidebar {
+  width: 50%;
+  margin: auto 0;
+}
+
+.textContainer {
+  margin: 0 40px;
+}
+
+.secondary {
+  color: #8864a4;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.primary {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: lightgray;
+}
+
+.highlight {
+  color: #FAED26
+}
