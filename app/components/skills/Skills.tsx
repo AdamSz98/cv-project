@@ -6,10 +6,15 @@ import {
   SiJavascript, SiTypescript, SiCsharp, 
   SiNextdotjs, SiAngular, SiDotnet
 } from 'react-icons/si';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Skills = () => {
   const [skills, setSkills] = useState([0, 0, 0, 0, 0, 0,]);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true)
+  }, [loaded])
 
   const showSkills = () => {
     setSkills([8, 6, 5, 7, 4, 5]);
@@ -28,7 +33,10 @@ const Skills = () => {
     }
   }
   
-  window.addEventListener('scroll', checkScroll);
+  if(loaded){
+    window.addEventListener('scroll', checkScroll);
+  }
+
 
   return (
     <div 

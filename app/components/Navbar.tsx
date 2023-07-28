@@ -1,9 +1,14 @@
 'use client';
 import styles from "./Navbar.module.css";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState('navbar');
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true)
+  }, [loaded])
 
   const changeBackground = () => {
     if(window.scrollY >= window.innerHeight) setNavbar('blur')
@@ -18,7 +23,9 @@ const Navbar = () => {
     });
   }
 
-  window.addEventListener('scroll', changeBackground);
+  if(loaded){
+    window?.addEventListener('scroll', changeBackground);
+  }
 
   return (
     <div className={styles[navbar]}>
