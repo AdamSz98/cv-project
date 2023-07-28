@@ -1,0 +1,15 @@
+.main {
+  height: 100vh;
+  background-color: #00000C;
+}
+
+.title {
+  color: #8864a4;
+  padding-top: 120px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.container {
+  padding: 100px 100px 0;
+}

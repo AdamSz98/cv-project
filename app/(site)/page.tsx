@@ -1,6 +1,7 @@
 import About from "../components/About";
 import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
+import Skills from "../components/skills/Skills";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Landing />
       <About />
+      <Skills />
     </div>
   )
 }
