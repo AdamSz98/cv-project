@@ -5,7 +5,7 @@
 }
 
 .imgContainer {
-  height: 70%;
+  height: 75%;
   position: relative;
   overflow: hidden;
 }
@@ -20,8 +20,15 @@
   object-fit: cover;
 }
 
-.contacts h1 {
+.container h1 {
   width: 200px;
-  margin: 10px auto;
+  margin: 25px auto;
   font-weight: normal;
+  color: #8864a4;
+}
+
+.contacts {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

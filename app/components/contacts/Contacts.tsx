@@ -1,7 +1,17 @@
+'use client';
+import ContactCard from './ContactCard';
 import styles from './Contacts.module.css';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { MdEmail, MdPhoneAndroid } from 'react-icons/md';
 
 const Contacts = () => {
+  const router = useRouter();
+  
+  const linkedIn = "https://www.linkedin.com/in/%C3%A1d%C3%A1m-szekr%C3%A9nyes-773046216/";
+  const github = "https://github.com/AdamSz98";
+
   return (
     <div className={styles.main}>
       <div className={styles.imgContainer}>
@@ -13,9 +23,28 @@ const Contacts = () => {
           height={3000}
         />
       </div>
-      <div className={styles.contacts}>
+      <div className={styles.container}>
         <h1>Contact me!</h1>
-        
+        <div className={styles.contacts}>
+          <ContactCard 
+            icon={AiFillLinkedin} 
+            label="LinkedIn"
+            redirectFunc={() => router.push(linkedIn)}
+          />
+          <ContactCard 
+            icon={AiFillGithub} 
+            label="Github"
+            redirectFunc={() => router.push(github)}
+          />
+          <ContactCard 
+            icon={MdEmail} 
+            label="szekrenyes.adam98@gmail.com"
+          />
+          <ContactCard 
+            icon={MdPhoneAndroid}
+            label="+36304470959"
+          />
+        </div>
       </div>
     </div>
   )
