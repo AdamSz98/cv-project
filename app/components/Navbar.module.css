@@ -2,17 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
   height: 62px;
+  width: 100%;
+  position: fixed;
 }
 
 .logo {
   font-size: 10px;
   color: white;
+  margin-left: 40px;
+}
+
+.linkContainer {
+  margin-right: 40px;
 }
 
 .link {
-  margin: 0 10px;
+  margin-left: 20px;
   text-decoration: none;
   color: white;
 }
