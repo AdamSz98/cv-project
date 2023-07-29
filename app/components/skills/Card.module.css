@@ -82,3 +82,24 @@
     width: 80%;
   }
 }
+
+@media (max-height: 700px) {
+  .card {
+    width: 120px;
+    height: 120px;
+    border-radius: 36px;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .icon, .next {
+    font-size: 36px;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
