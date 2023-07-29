@@ -1,15 +1,13 @@
 'use client';
+
 import ContactCard from './ContactCard';
 import styles from './Contacts.module.css';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { MdEmail, MdPhoneAndroid } from 'react-icons/md';
 import MusicPlayer from './MusicPlayer';
 
 const Contacts = () => {
-  const router = useRouter();
-  
   const linkedIn = "https://www.linkedin.com/in/%C3%A1d%C3%A1m-szekr%C3%A9nyes-773046216/";
   const github = "https://github.com/AdamSz98";
 
@@ -31,12 +29,12 @@ const Contacts = () => {
           <ContactCard 
             icon={AiFillLinkedin} 
             label="LinkedIn"
-            redirectFunc={() => router.push(linkedIn)}
+            url={linkedIn}
           />
           <ContactCard 
             icon={AiFillGithub} 
             label="Github"
-            redirectFunc={() => router.push(github)}
+            url={github}
           />
           <ContactCard 
             icon={MdEmail} 

@@ -5,26 +5,27 @@ import { toast } from 'react-hot-toast';
 interface ContactCardProps {
   label: string;
   icon: any;
-  redirectFunc?: any;
+  url?: string;
   type?: string;
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
   label,
   icon: Icon,
-  redirectFunc,
+  url,
   type,
 }) => {
 
-  if(redirectFunc) {
+  if(url) {
     return (
-      <div 
-        onClick={redirectFunc} 
+      <a
+        target="_blank"
+        href={url}
         className={sytles.card}
       >
         <Icon className={sytles.icon} />
         <p>{label}</p>
-      </div>
+      </a>
     )
   } else {
     return (

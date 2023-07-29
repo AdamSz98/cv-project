@@ -6,6 +6,8 @@
   min-height: 60px;
   margin: 0 auto;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .icon {
@@ -24,7 +26,6 @@
 }
 
 .card:hover p {
-  font-size: 17px;
   color: #8864a4;
   margin-bottom: -7px;
 }

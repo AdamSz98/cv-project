@@ -16,8 +16,9 @@ const MusicPlayer = () => {
 
     if(!messageSent[1]) {
       toast(() => (
-        <span>
-          🎵 Hope you like it!
+        <span className={styles.popup}>
+          🎵 Hope you like it! <br/>
+          Don't worry, the links will open in a new tab.
         </span>
       ))
       setMessageSent([messageSent[0], true]);
