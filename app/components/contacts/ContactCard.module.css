@@ -26,6 +26,7 @@
 .card:hover p {
   font-size: 17px;
   color: #8864a4;
+  margin-bottom: -7px;
 }
 
 .card:active p, .card:active .icon {
