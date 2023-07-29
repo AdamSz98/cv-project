@@ -32,3 +32,22 @@
 .card:active p, .card:active .icon {
   color: #fff;
 }
+
+@media (max-width: 640px) {
+  .card {
+    width: 20px;
+  }
+  .card p {
+    visibility: hidden;
+  }
+
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .card {
+    width: 20px;
+  }
+  .card p {
+    visibility: hidden;
+  }
+}

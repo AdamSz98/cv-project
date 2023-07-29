@@ -21,6 +21,10 @@
   object-fit: cover;
 }
 
+.container {
+  max-height: 200px;
+}
+
 .container h1 {
   text-align: center;
   margin: 25px auto;
@@ -30,7 +34,19 @@
 }
 
 .contacts {
-  margin: 50px auto 25px;
+  margin: 30px auto 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 640px) {
+  .container {
+    height: 100px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .container {
+    height: 100px;
+  }
 }
