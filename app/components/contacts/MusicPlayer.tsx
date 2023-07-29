@@ -3,14 +3,37 @@
 import styles from './MusicPlayer.module.css';
 import { AiFillPlayCircle, AiFillPauseCircle } from 'react-icons/ai';
 import { useState, useRef } from 'react';
+import { toast } from 'react-hot-toast';
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [messageSent, setMessageSent] = useState([false, false]);
   const myMusic = useRef(new Audio());
 
   const togglePlay = () => {
     isPlaying ? myMusic.current.pause() : myMusic.current.play();
     setIsPlaying(!isPlaying)
+
+    if(!messageSent[1]) {
+      toast(() => (
+        <span>
+          🎵 Hope you like it!
+        </span>
+      ))
+      setMessageSent([messageSent[0], true]);
+    }
+  }
+
+  const sendFirstMessage = () => {
+    if(!messageSent[0]) {
+      toast(() => (
+        <span>
+          🎸 Listen to my song
+          while browsing! 
+        </span>
+      ))
+      setMessageSent([true, messageSent[1]]);
+    }
   }
 
   myMusic.current.addEventListener('ended', () => {
@@ -24,11 +47,12 @@ const MusicPlayer = () => {
         isPlaying ? 
         (<AiFillPauseCircle 
           className={styles.icon}
-          onClick={togglePlay} 
+          onClick={togglePlay}
         />) : 
         (<AiFillPlayCircle 
           className={styles.icon}
-          onClick={togglePlay}  
+          onClick={togglePlay}
+          onMouseEnter={sendFirstMessage}   
         />)
       }
       <audio
