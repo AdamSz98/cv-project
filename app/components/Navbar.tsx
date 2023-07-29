@@ -54,7 +54,11 @@ const Navbar = () => {
           className={styles.link}
           onClick={() => navigateTo(window.innerHeight * 2)}
         >SKILLS</a>
-        <a href="#contacts" className={styles.link}>CONTACTS</a>
+        <a 
+          href="#contacts" 
+          className={styles.link}
+          onClick={() => navigateTo(window.innerHeight * 3)}
+        >CONTACTS</a>
       </div>
     </div>
   )
