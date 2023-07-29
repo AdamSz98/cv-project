@@ -40,3 +40,45 @@
   border-radius: 20px;
   transition: ease-in-out 2s;
 }
+
+@media (max-width: 640px) {
+  .card {
+    width: 140px;
+    height: 140px;
+    border-radius: 42px;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .icon, .next {
+    font-size: 42px;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .card {
+    width: 160px;
+    height: 160px;
+    border-radius: 48px;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .icon, .next {
+    font-size: 48px;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
