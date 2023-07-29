@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { MdEmail, MdPhoneAndroid } from 'react-icons/md';
+import MusicPlayer from './MusicPlayer';
 
 const Contacts = () => {
   const router = useRouter();
@@ -22,6 +23,7 @@ const Contacts = () => {
           width={4500}
           height={3000}
         />
+        <MusicPlayer />
       </div>
       <div className={styles.container}>
         <h1>Contact me!</h1>

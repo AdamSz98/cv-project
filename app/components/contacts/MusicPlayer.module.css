@@ -1,0 +1,27 @@
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 75px);
+  font-size: 150px;
+}
+
+.icon {
+  color: #fff;
+  opacity: 0.8;
+  backdrop-filter: blur(1px);
+  cursor: pointer;
+}
+
+.player:hover {
+  top: calc(50vh - 155px);
+  left: calc(50vw - 79px);
+  font-size: 160px;
+}
+
+.icon:active {
+  color: #8864a4;
+  opacity: 0.9
+}
