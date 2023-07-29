@@ -10,13 +10,6 @@
   transition: ease-in-out 0.5s;
 }
 
-.logo {
-  font-size: 24px;
-  color: white;
-  margin-left: 40px;
-  text-decoration: none;
-}
-
 .linkContainer {
   margin-right: 40px;
 }
@@ -25,9 +18,19 @@
   margin-left: 20px;
   text-decoration: none;
   color: white;
+  transition: ease-in-out 300ms;
 }
 
 .blur {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.link:active {
+  color: #8864a4;
+  opacity: 1;
 }

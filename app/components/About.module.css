@@ -70,3 +70,9 @@
     width: 100%;
   }
 }
+
+@media (min-width: 800px) {
+  .textContainer{
+    width: 60%;
+  }
+}

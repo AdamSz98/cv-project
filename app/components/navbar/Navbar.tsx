@@ -1,4 +1,5 @@
 'use client';
+import Logo from "./Logo";
 import styles from "./Navbar.module.css";
 import { useState, useEffect } from 'react';
 
@@ -35,13 +36,10 @@ const Navbar = () => {
   return (
     <div className={styles[navbar]}>
       <div>
-        <a
+        <Logo 
+          onClick={() => navigateTo(0)} 
           href="#home"
-          className={styles.logo}
-          onClick={() => navigateTo(0)}
-        >
-          Adam Sz
-        </a>
+        />
       </div>
       <div className={styles.linkContainer}>
         <a 
