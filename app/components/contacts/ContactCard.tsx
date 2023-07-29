@@ -1,5 +1,4 @@
 import sytles from './ContactCard.module.css';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { toast } from 'react-hot-toast';
 
 interface ContactCardProps {
@@ -29,20 +28,19 @@ const ContactCard: React.FC<ContactCardProps> = ({
     )
   } else {
     return (
-      <CopyToClipboard text={label}>
-        <div 
-          className={sytles.card} 
-          onClick={() => {
-            toast(`${type} copied!`, {
-              icon: '📋',
-              duration: 1500
-            })
-          }}
-        >
-          <Icon className={sytles.icon} />
-          <p>{label}</p>
-        </div>
-      </CopyToClipboard>
+      <div 
+        className={sytles.card} 
+        onClick={() => {
+          navigator.clipboard.writeText(label)
+          toast(`${type} copied!`, {
+            icon: '📋',
+            duration: 1500
+          })
+        }}
+      >
+        <Icon className={sytles.icon} />
+        <p>{label}</p>
+      </div>
     )
   }
 }
