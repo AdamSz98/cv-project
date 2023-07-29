@@ -37,16 +37,23 @@
   margin: 30px auto 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  max-width: 800px;
 }
 
 @media (max-width: 640px) {
   .container {
-    height: 100px;
+    height: 150px;
   }
 }
 
 @media (min-width: 640px) and (max-width: 768px) {
   .container {
-    height: 100px;
+    height: 150px;
+  }
+}
+
+@media (max-height: 700px) {
+  .container {
+    height: 150px;
   }
 }

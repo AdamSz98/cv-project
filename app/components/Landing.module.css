@@ -33,3 +33,32 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .landing {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+  .landing {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 550px) {
+  .catchPhrase {
+    visibility: hidden;
+    font-size: 0px;
+  }
+
+  .landing {
+    font-size: 60px
+  }
+}

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 60px;
+  width: 60px;
   min-height: 60px;
   margin: 0 auto;
   cursor: pointer;
@@ -44,6 +44,15 @@
 }
 
 @media (min-width: 640px) and (max-width: 768px) {
+  .card {
+    width: 20px;
+  }
+  .card p {
+    visibility: hidden;
+  }
+}
+
+@media (max-height: 700px) {
   .card {
     width: 20px;
   }

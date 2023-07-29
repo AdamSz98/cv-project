@@ -33,7 +33,10 @@ const Landing = () => {
         />
       <div className={styles.textContainer}>
         <h1 className={styles.text}>
-          Adam, <br/> a passionate dev for <br/> your consideration.
+          Adam
+          <span className={styles.catchPhrase}>
+            ,<br/> a passionate dev for <br/> your consideration.
+          </span>
         </h1>
       </div>
     </div>

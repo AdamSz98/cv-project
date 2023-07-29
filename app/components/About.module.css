@@ -51,3 +51,22 @@
 .highlight {
   color: #8864a4;
 }
+
+@media (max-width: 750px) {
+  .about {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .imgContainer {
+    height: 50%;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 80%;
+  }
+  .textContainer {
+    width: 100%;
+  }
+}
