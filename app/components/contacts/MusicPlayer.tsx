@@ -2,16 +2,17 @@
 
 import styles from './MusicPlayer.module.css';
 import { AiFillPlayCircle, AiFillPauseCircle } from 'react-icons/ai';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [messageSent, setMessageSent] = useState([false, false]);
-  const myMusic = useRef(new Audio());
+
+  const myMusic = useRef();
 
   const togglePlay = () => {
-    isPlaying ? myMusic.current.pause() : myMusic.current.play();
+    isPlaying ? (myMusic.current! as HTMLAudioElement).pause() : (myMusic.current! as HTMLAudioElement).play();
     setIsPlaying(!isPlaying)
 
     if(!messageSent[1]) {
@@ -37,10 +38,12 @@ const MusicPlayer = () => {
     }
   }
 
-  myMusic.current.addEventListener('ended', () => {
-    myMusic.current.currentTime = 0;
-    setIsPlaying(false);
-  })
+  if(myMusic.current) {
+    (myMusic.current! as HTMLAudioElement).addEventListener('ended', () => {
+      (myMusic.current! as HTMLAudioElement).currentTime = 0;
+      setIsPlaying(false);
+    })
+  }
 
   return (
     <div className={styles.player}>
