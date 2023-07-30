@@ -55,4 +55,13 @@
   .title {
     font-size: 30px;
   }
+  .container {
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    grid-gap: 20px;
+  }
 }

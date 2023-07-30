@@ -71,6 +71,19 @@
   }
 }
 
+@media (max-width: 500px) {
+  .text {
+    font-size: 15px;
+  }
+  .primary {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .secondary {
+    font-size: 18px;
+  }
+}
+
 @media (min-width: 800px) {
   .textContainer{
     width: 60%;
