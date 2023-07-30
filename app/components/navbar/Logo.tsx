@@ -12,7 +12,7 @@ const Logo: React.FC<LogoProps> = ({
       className={styles.logo}
       href={href}
     >
-      Adam Sz
+      Adam Szekrényes
     </a>
   )
 }
