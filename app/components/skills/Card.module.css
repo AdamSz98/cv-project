@@ -41,7 +41,59 @@
   transition: ease-in-out 2s;
 }
 
-@media (max-width: 640px) {
+@media (max-height: 700px) {
+  .card {
+    width: 120px;
+    height: 120px;
+    border-radius: 36px;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .icon, .next {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 80px;
+    height: 80px;
+    border-radius: 26px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  }
+
+  .label {
+    margin-top: 0px;
+    font-size: 0px;
+  }
+
+  .icon, .next {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 560px) {
+  .card {
+    width: 120px;
+    height: 120px;
+    border-radius: 40px;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .icon, .next {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 640px) {
   .card {
     width: 140px;
     height: 140px;
@@ -55,10 +107,6 @@
 
   .icon, .next {
     font-size: 42px;
-  }
-
-  .container {
-    width: 75%;
   }
 }
 
@@ -76,30 +124,5 @@
 
   .icon, .next {
     font-size: 48px;
-  }
-
-  .container {
-    width: 80%;
-  }
-}
-
-@media (max-height: 700px) {
-  .card {
-    width: 120px;
-    height: 120px;
-    border-radius: 36px;
-  }
-
-  .label {
-    margin-top: 10px;
-    font-size: 15px;
-  }
-
-  .icon, .next {
-    font-size: 36px;
-  }
-
-  .container {
-    width: 75%;
   }
 }
