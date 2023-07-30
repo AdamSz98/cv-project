@@ -42,6 +42,7 @@ const Skills = () => {
   return (
     <div 
       className={styles.main}
+      id="skillspage"
     >
       <h1 className={styles.title}>Skills</h1>
       <h2 className={styles.subtitle}>Programming Languages</h2>

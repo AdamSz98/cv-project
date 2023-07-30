@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="aboutpage">
       <div className={styles.imgContainer}>
         <Image
           className={styles.img} 

@@ -21,14 +21,6 @@ const Navbar = () => {
     else setNavbar('navbar');
   }
 
-  const navigateTo = (y: number) => {
-    window.scrollTo({
-      top: y,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
-
   if(loaded){
     window?.addEventListener('scroll', changeBackground);
   }
@@ -36,8 +28,7 @@ const Navbar = () => {
   return (
     <div className={styles[navbar]}>
       <div>
-        <Logo 
-          onClick={() => navigateTo(0)} 
+        <Logo
           href="#home"
         />
       </div>
@@ -45,17 +36,14 @@ const Navbar = () => {
         <a 
           href="#about" 
           className={styles.link}
-          onClick={() => navigateTo(window.innerHeight)}
         >ABOUT</a>
         <a 
           href="#skills" 
           className={styles.link}
-          onClick={() => navigateTo(window.innerHeight * 2)}
         >SKILLS</a>
         <a 
           href="#contacts" 
           className={styles.link}
-          onClick={() => navigateTo(window.innerHeight * 3)}
         >CONTACTS</a>
       </div>
     </div>

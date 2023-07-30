@@ -12,7 +12,7 @@ const Contacts = () => {
   const github = "https://github.com/AdamSz98";
 
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="contactspage">
       <div className={styles.imgContainer}>
         <Image 
           className={styles.img}
