@@ -24,7 +24,6 @@ const Contacts = () => {
         <MusicPlayer />
       </div>
       <div className={styles.container}>
-        <h1>Contact me!</h1>
         <div className={styles.contacts}>
           <ContactCard 
             icon={AiFillLinkedin} 

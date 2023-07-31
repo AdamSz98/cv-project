@@ -29,3 +29,11 @@
 .popup {
   text-align: center;
 }
+
+@media (max-width: 450px) {
+  .player, .player:hover {
+    top: calc(50vh - 130px);
+    left: calc(50vw - 60px);
+    font-size: 130px;
+  }
+}

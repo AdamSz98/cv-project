@@ -39,7 +39,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
         }}
       >
         <Icon className={sytles.icon} />
-        <p>{label}</p>
+        <p>{`Copy my ${type}`}</p>
       </div>
     )
   }

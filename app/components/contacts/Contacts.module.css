@@ -3,12 +3,12 @@
   background-color: #00000C;
   color: #fff;
   display: grid;
-  grid-template-rows: 5fr 1fr;
 }
 
 .imgContainer {
   position: relative;
   overflow: hidden;
+  height: calc(100vh - 130px);
 }
 
 .img {
@@ -22,7 +22,7 @@
 }
 
 .container {
-  max-height: 200px;
+  max-height: 130px;
 }
 
 .container h1 {
@@ -34,26 +34,20 @@
 }
 
 .contacts {
-  margin: 30px auto 25px;
+  margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 800px;
 }
 
-@media (max-width: 640px) {
-  .container {
-    height: 150px;
+@media (max-width: 768px) or (max-height: 700px) {
+  .imgContainer{
+    height: calc(100vh - 100px)
   }
-}
-
-@media (min-width: 640px) and (max-width: 768px) {
   .container {
-    height: 150px;
+    height: 80px;
   }
-}
-
-@media (max-height: 700px) {
-  .container {
-    height: 150px;
+  .contacts {
+    max-width: 450px;
   }
 }
