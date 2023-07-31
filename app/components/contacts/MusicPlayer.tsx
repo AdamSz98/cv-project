@@ -7,7 +7,7 @@ import { toast } from 'react-hot-toast';
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [messageSent, setMessageSent] = useState([false, false]);
+  const [messageSent, setMessageSent] = useState(false);
   const [audio, setAudio] = useState({});
 
   useEffect(() => {
@@ -20,26 +20,13 @@ const MusicPlayer = () => {
     isPlaying ? (audio! as HTMLAudioElement).pause() : (audio as HTMLAudioElement).play();
     setIsPlaying(!isPlaying)
 
-    if(!messageSent[1]) {
+    if(!messageSent) {
       toast(() => (
         <span className={styles.popup}>
-          🎵 Hope you like it! <br/>
-          And worry not, the links will open in a new tab.
+          🎸 Hope you like my song!
         </span>
       ))
-      setMessageSent([messageSent[0], true]);
-    }
-  }
-
-  const sendFirstMessage = () => {
-    if(!messageSent[0]) {
-      toast(() => (
-        <span>
-          🎸 Listen to my song
-          while browsing! 
-        </span>
-      ))
-      setMessageSent([true, messageSent[1]]);
+      setMessageSent(true);
     }
   }
 
@@ -61,7 +48,6 @@ const MusicPlayer = () => {
         (<AiFillPlayCircle 
           className={styles.icon}
           onClick={togglePlay}
-          onMouseEnter={sendFirstMessage}   
         />)
       }
       <audio
