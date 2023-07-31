@@ -33,6 +33,8 @@ const Skills = () => {
               color="#8864a4"
             />
           </div>
+        </div>
+        <div className={styles.content}>
           <h2 className={styles.subtitle}>Frameworks</h2>
           <div className={styles.container}>
             <Card 

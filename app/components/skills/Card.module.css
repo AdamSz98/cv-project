@@ -142,3 +142,54 @@
     font-size: 48px;
   }
 }
+
+@media (max-height: 790px) and (max-width: 1500px) {
+  .card {
+    width: 160px;
+    height: 160px;
+    border-radius: 48px;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .icon, .next {
+    font-size: 48px;
+  }
+}
+
+@media (max-height: 790px) and (max-width: 1240px) {
+  .card {
+    width: 120px;
+    height: 120px;
+    border-radius: 40px;
+  }
+
+  .label {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .icon, .next {
+    font-size: 40px;
+  }
+}
+
+@media (max-height: 790px) and (max-width: 1000px) {
+  .card {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+  }
+  .label {
+    margin-top: 0px;
+    font-size: 0px;
+  }
+
+  .icon, .next {
+    font-size: 33px;
+  }
+}
