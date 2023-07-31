@@ -9,6 +9,10 @@ const Navbar = () => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    window.addEventListener('resize', changeBackground);
+  }, [])
+
+  useEffect(() => {
     setLoaded(true)
     changeBackground();
   }, [loaded])
