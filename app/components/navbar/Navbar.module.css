@@ -45,6 +45,11 @@
   z-index: -1;
 }
 
+.linkContainer {
+  display: flex;
+  list-style: none;
+}
+
 @media (max-width: 600px) {
   .navbar{
     transition: 0s;
