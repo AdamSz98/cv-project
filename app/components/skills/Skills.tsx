@@ -15,7 +15,7 @@ const Skills = () => {
       <h1 className={styles.title}>Skills</h1>
       <div className={styles.container}>
         <div className={styles.content}>
-        <Card 
+          <Card 
             icon={SiHtml5} 
             label="HTML"
             color="#e84c24"
