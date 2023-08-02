@@ -13,6 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     setLoaded(true)
     changeBackground();
+    window.addEventListener('resize', () => setModalOpen(false))
   }, [])
 
   const changeBackground = () => {
@@ -31,6 +32,11 @@ const Navbar = () => {
     }
   }
 
+  const clickModuleOption = (input: string) => {
+    setModalOpen(false);
+    scrollToSection(input);
+  }
+
   if(loaded){
     window?.addEventListener('scroll', changeBackground);
   }
@@ -40,7 +46,7 @@ const Navbar = () => {
     <>
       <nav className={styles[navbar]}>
         <div>
-          <Logo />
+          <Logo onClick={() => setModalOpen(false)}/>
         </div>
         <ul className={styles.linkContainer}>
           <li>
@@ -74,8 +80,9 @@ const Navbar = () => {
       </nav>
       {modalOpen && 
       <NavModal 
-        onClick={scrollToSection}
+        onClick={clickModuleOption}
         background={navbar}
+        secondaryOnClick={() => setModalOpen(false)}
       />
       }
     </>

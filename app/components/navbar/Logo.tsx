@@ -1,8 +1,15 @@
 import styles from './Logo.module.css';
 
-const Logo = () => {
+interface LogoProps {
+  onClick: any;
+}
+
+const Logo: React.FC<LogoProps> = ({
+  onClick
+}) => {
 
   const toTheTop = () => {
+    onClick()
     window.scrollTo({
       top: 0,
       left: 0,
