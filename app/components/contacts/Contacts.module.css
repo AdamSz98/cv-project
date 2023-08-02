@@ -8,7 +8,7 @@
 .imgContainer {
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 110px);
 }
 
 .img {
@@ -22,7 +22,8 @@
 }
 
 .container {
-  max-height: 130px;
+  max-height: 110px;
+  display: flex;
 }
 
 .container h1 {
@@ -33,8 +34,8 @@
   color: #8864a4;
 }
 
-.contacts {
-  margin: 30px auto;
+.contacts { 
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 800px;
@@ -42,12 +43,13 @@
 
 @media (max-width: 768px) or (max-height: 700px) {
   .imgContainer{
-    height: calc(100vh - 100px)
+    height: calc(100vh - 75px)
   }
   .container {
-    height: 80px;
+    height: 75px;
+    align-items: center;
   }
   .contacts {
-    max-width: 450px;
+    width: 100%;
   }
 }
