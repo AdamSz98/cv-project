@@ -36,11 +36,6 @@ const Skills = () => {
             color="#2f74c0"
           />
           <Card 
-            icon={SiCsharp} 
-            label="C#"
-            color="#8864a4"
-          />
-          <Card 
             icon={SiReact} 
             label="React"
             color="#61dbfb"
@@ -50,6 +45,11 @@ const Skills = () => {
             label="Next.js"
             color="#000"
             next={true}
+          />
+          <Card 
+            icon={SiCsharp} 
+            label="C#"
+            color="#8864a4"
           />
           <Card 
             icon={SiDotnet} 

@@ -16,7 +16,7 @@
   margin-right: 40px;
 }
 
-.link, .icon {
+.link, .icon, .iconOpen {
   margin-left: 20px;
   text-decoration: none;
   color: white;
@@ -37,7 +37,7 @@
   opacity: 1;
 }
 
-.icon {
+.icon, .iconOpen{
   font-size: 0;
   visibility: hidden;
   margin-left: 0;
@@ -60,12 +60,16 @@
     transition: 0s;
   }
 
-  .icon {
+  .icon, .iconOpen{
     visibility: visible;
     font-size: 32px;
   }
 
-  .icon:active {
+  .iconOpen {
+    margin-right: 20px;
+  }
+
+  .icon:active, .iconOpen:active {
     color: #8864a4;
   }
 }

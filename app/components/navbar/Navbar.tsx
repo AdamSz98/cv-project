@@ -73,13 +73,13 @@ const Navbar = () => {
           <li>
             {modalOpen ? 
               <CgMenuMotion
-                className={styles.icon} 
+                className={styles.iconOpen} 
                 onClick={() => setModalOpen(!modalOpen)}
               /> 
               : 
               <CgMenu
-              className={styles.icon} 
-              onClick={() => setModalOpen(!modalOpen)}
+                className={styles.icon} 
+                onClick={() => setModalOpen(!modalOpen)}
             />
             }
           </li>
