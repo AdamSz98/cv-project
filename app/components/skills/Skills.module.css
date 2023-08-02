@@ -10,7 +10,7 @@
 
 .title {
   color: #8864a4;
-  margin-bottom: 40px;
+  margin: 40px 0 40px;
   width: 100%;
   text-align: center;
   font-size: 40px;
@@ -46,11 +46,18 @@
   }
   .content {
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
   }
 }
 
 @media (max-width: 620px) {
   .title {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    grid-column-gap: 10px;
   }
 }

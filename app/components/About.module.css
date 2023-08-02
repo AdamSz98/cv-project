@@ -1,6 +1,6 @@
 .about {
   margin-top: 100vh; 
-  height: 100vh;
+  min-height: 100vh;
   background-color: #00000C;
   color: white;
   display: flex;
@@ -8,7 +8,7 @@
 
 .imgContainer {
   width: 50%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -59,12 +59,13 @@
   }
 
   .imgContainer {
-    height: 50%;
+    height: 50vh;
     width: 100%;
   }
 
   .sidebar {
     width: 80%;
+    margin: 62px 0 40px;
   }
   .textContainer {
     width: 100%;
