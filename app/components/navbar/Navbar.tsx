@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import NavModal from "./NavModal";
 import styles from "./Navbar.module.css";
 import { useState, useEffect } from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { CgMenu, CgMenuMotion } from 'react-icons/cg';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState('transparent');
@@ -71,10 +71,17 @@ const Navbar = () => {
             >CONTACTS</a>
           </li>
           <li>
-            <RxHamburgerMenu 
+            {modalOpen ? 
+              <CgMenuMotion
+                className={styles.icon} 
+                onClick={() => setModalOpen(!modalOpen)}
+              /> 
+              : 
+              <CgMenu
               className={styles.icon} 
               onClick={() => setModalOpen(!modalOpen)}
             />
+            }
           </li>
         </ul>
       </nav>

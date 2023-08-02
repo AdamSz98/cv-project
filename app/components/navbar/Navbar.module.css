@@ -50,7 +50,7 @@
   }
 
   .linkContainer {
-    margin-right: 40px;
+    margin-right: 10px;
   }
 
   .link {
@@ -63,7 +63,6 @@
   .icon {
     visibility: visible;
     font-size: 32px;
-    transition: 0s;
   }
 
   .icon:active {
