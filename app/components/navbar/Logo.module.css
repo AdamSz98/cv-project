@@ -23,16 +23,6 @@
 
 @media (max-width: 600px) {
   .logo {
-    background: none;
     margin-left: 10px;
-    cursor: auto;
-  }
-  .logo:hover {
-    background: none;
-    color: #fff;
-  }
-  
-  .logo:active {
-    background: none;
   }
 }

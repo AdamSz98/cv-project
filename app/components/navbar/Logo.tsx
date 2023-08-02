@@ -1,16 +1,20 @@
 import styles from './Logo.module.css';
 
-interface LogoProps {
-  href: string;
-}
+const Logo = () => {
 
-const Logo: React.FC<LogoProps> = ({
-  href
-}) => {
+  const toTheTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <a 
       className={styles.logo}
-      href={href}
+      onClick={toTheTop}
+      href="#home"
     >
       Adam Szekrényes
     </a>

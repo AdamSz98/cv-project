@@ -10,7 +10,7 @@ const Landing = () => {
   const [loaded, setLoaded] = useState(false);
 
   const changeCity = () => {
-    if(window.scrollY < window.innerHeight) return;
+    if (window.scrollY < window.innerHeight) return;
     let newNum = Math.floor(Math.random() * 6 + 1);
     if(newNum === cityNum) newNum = Math.floor(Math.random() * 6 + 1);
     setCityNum(newNum);
