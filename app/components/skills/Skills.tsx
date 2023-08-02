@@ -8,7 +8,7 @@ import {
 
 const Skills = () => {
   return (
-    <div 
+    <section
       className={styles.main}
       id="skillspage"
     >
@@ -58,7 +58,7 @@ const Skills = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

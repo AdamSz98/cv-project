@@ -12,7 +12,7 @@ const Contacts = () => {
   const github = "https://github.com/AdamSz98";
 
   return (
-    <div className={styles.main} id="contactspage">
+    <section className={styles.main} id="contactspage">
       <div className={styles.imgContainer}>
         <Image 
           className={styles.img}
@@ -47,7 +47,7 @@ const Contacts = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

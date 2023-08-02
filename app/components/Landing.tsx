@@ -23,7 +23,7 @@ const Landing = () => {
   if(loaded) window.addEventListener('scroll', changeCity);
 
   return (
-    <div className={styles.landing}>
+    <section className={styles.landing}>
         <Image
           className={styles.backgroundImg} 
           src={`/images/bg${cityNum}.jpg`} 
@@ -39,7 +39,7 @@ const Landing = () => {
           a passionate dev for <br/> your consideration.
         </h1>
       </div>
-    </div>
+    </section>
   )
 }
 
