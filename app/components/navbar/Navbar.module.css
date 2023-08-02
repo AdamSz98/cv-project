@@ -1,4 +1,4 @@
-.navbar, .blur, .small{
+.transparent, .blur, .small{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,10 +11,12 @@
 }
 
 .linkContainer {
+  display: flex;
+  list-style: none;
   margin-right: 40px;
 }
 
-.link, .smallLink {
+.link, .icon {
   margin-left: 20px;
   text-decoration: none;
   color: white;
@@ -35,24 +37,20 @@
   opacity: 1;
 }
 
-.smallLink {
+.icon {
   font-size: 0;
   visibility: hidden;
   margin-left: 0;
-}
-
-.linkContainer {
-  display: flex;
-  list-style: none;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
-  .navbar{
+  .transparent{
     transition: 0s;
   }
 
   .linkContainer {
-    margin-right: 15px;
+    margin-right: 40px;
   }
 
   .link {
@@ -62,14 +60,13 @@
     transition: 0s;
   }
 
-  .smallLink {
+  .icon {
     visibility: visible;
-    margin-left: 10px;
     font-size: 32px;
     transition: 0s;
   }
 
-  .smallLink:active {
+  .icon:active {
     color: #8864a4;
   }
 }
